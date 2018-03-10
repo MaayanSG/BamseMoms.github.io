@@ -1,0 +1,416 @@
+/* Global */
+
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background:url(../assets/bilder/ep_naturalblack.png);
+}
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 0 0 3%;
+    margin-bottom:2%;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    margin-right:1%;
+    border-bottom:3px solid #fff;
+}
+.topnav a:hover {
+    border-bottom:3px solid #170df3;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* -- */
+/* Index */
+
+@media (min-width: 600px) {
+    #index-system {
+        width:82%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #fff;
+        border-radius:4px;
+        padding:1%;
+        display:none;
+    }
+    #index-snapchat {
+        width:56%;
+        margin:auto auto 2% 7.8%;
+        display:inline-block;
+        background-color:#fff;
+        padding:2%;
+        text-align:center;
+        border-radius:4px;
+    }
+    #index-system a {
+        color:#000;
+        font-weight:bolder;
+    }
+    #index-stream {
+        width:60%;
+        margin:auto auto 2% 7.8%;
+        display:inline-block;
+    }
+    #index-instagram {
+        width:20%;
+        margin:auto 7.8% 2% auto;
+        float:right;
+    }
+}
+@media (max-width: 600px) {
+    #index-system {
+        width:86%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #fff;
+        border-radius:4px;
+        padding:4%;
+        display:none;
+    }
+    #index-snapchat {
+        width:90%;
+        margin:auto auto 2% 3%;
+        display:inline-block;
+        background-color:#fff;
+        padding:2%;
+        text-align:center;
+        border-radius:4px;
+    }
+    #index-snapchat img {
+        width:40%;
+    }
+    #index-system a {
+        color:#000;
+        font-weight:bolder;
+    }
+    #index-stream {
+        width:95%;
+        margin:2% auto 2% auto;
+    }
+    #index-twitter {
+        width:94%;
+        margin:2% auto 2% auto;
+        min-height:720;
+        max-height:720;
+    }
+}
+
+/* -- */
+/* Om */
+
+@media (min-width: 600px) {
+    #om-container {
+        display:none;
+        width:80%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:2%;
+        border-radius:4px;
+    }
+    #om-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #om-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #om-container2 {
+        display:none;
+        width:80%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:2%;
+        border-radius:4px;
+    }
+    #om-container2 divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #om-container2 hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+}
+@media (max-width: 600px) {
+    #om-container {
+        display:none;
+        width:87%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:4%;
+    }
+    #om-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #om-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #om-container2 {
+        display:none;
+        width:87%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:4%;
+    }
+    #om-container2 divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #om-container2 hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+}
+
+/* RascoBots */
+
+@media (min-width: 600px) {
+    #RascoBots-container {
+        display:none;
+        width:80%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:2%;
+        border-radius:4px;
+    }
+    #RascoBots-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #RascoBots-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #RascoBots-container2 {
+        display:none;
+        width:80%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:2%;
+        border-radius:4px;
+    }
+    #RascoBots-container2 divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #RascoBots-container2 hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+}
+@media (max-width: 600px) {
+    #RascoBots-container {
+        display:none;
+        width:87%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:4%;
+    }
+    #RascoBots-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #RascoBots-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #RascoBots-container2 {
+        display:none;
+        width:87%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:4%;
+    }
+    #RascoBots-container2 divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #RascoBots-container2 hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+}
+
+
+/* -- */
+/* Gear */
+
+@media (min-width: 600px) {
+    #gear-container {
+        display:none;
+        width:80%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:2%;
+        border-radius:4px;
+    }
+    #gear-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #gear-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #gear-container .komponent {
+        background-color:#fff;
+        padding:2%;
+        width:80;
+        margin:1% auto auto auto;
+    }
+    #gear-container .komponent img {
+        width:6%;
+    }
+    #gear-container .komponent a {
+        float:right;
+        margin:1.6% 5% 0% 0%;
+        font-size:20px;
+        color:#111;
+    }
+}
+@media (max-width: 600px) {
+    #gear-container {
+        display:none;
+        width:87%;
+        margin:2% auto 2% auto;
+        background-color:#fff;
+        border:2px solid #111;
+        padding:4%;
+    }
+    #gear-container divtitle {
+        color:#111;
+        font-size:40px;
+        font-weight:900;
+    }
+    #gear-container hr {
+        height:2px;
+        background-color:#170df3;
+        border:0;
+    }
+    #gear-container .komponent {
+        background-color:#fff;
+        padding:5%;
+        width:100;
+        margin:1% auto auto auto;
+    }
+    #gear-container .komponent img {
+        width:10%;
+    }
+    #gear-container .komponent a {
+        margin:1.6% 5% 0% 0%;
+        font-size:20px;
+        color:#111;
+    }
+}
+
+/* Tilgangsnekt */
+
+#tilgangsnekt-container {
+    width:50%;
+    margin:25vh auto auto auto;
+    padding:3%;
+    text-align:center;
+    background-color:rgb(255,255,255);
+    box-shadow: 1px 1px 1px 1px #170df3;
+}
+#tilgangsnekt-container divtitle {
+    color:#111;
+    font-size:45px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+#tilgangsnekt-container hr {
+    background-color:#170df3;
+    height:4px;
+    border:0;
+    margin:2% 0% 2% 0%;
+}
+#tilgangsnekt-container .credit {
+    font-size:12px;
+    color:grey;
+    margin-top:4%
+}
+#tilgangsnekt-container .credit a {
+    color:grey;
+}
+@media (max-width: 600px) {
+    #tilgangsnekt-container {
+        width:90%;
+    }
+}
+
+/* footer */
+
+footer{
+  padding-bottom: 20px;
+}
+
+footer p{
+  text-align: center;
+  color: #FFF;
+  padding-top: 600px;
+}
+
+/* -- */
