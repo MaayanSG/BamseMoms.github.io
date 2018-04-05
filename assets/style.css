@@ -5,6 +5,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background:url(../assets/bilder/ep_naturalblack.png);
 }
+
+h1{
+  color: #FFF;
+  text-align: center;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #fff;
@@ -65,67 +71,18 @@ body {
         padding:1%;
         display:none;
     }
-    #index-snapchat {
-        width:56%;
-        margin:auto auto 2% 7.8%;
-        display:inline-block;
-        background-color:#fff;
-        padding:2%;
-        text-align:center;
-        border-radius:4px;
-    }
     #index-system a {
         color:#000;
         font-weight:bolder;
     }
     #index-stream {
         width:60%;
+        padding-left: 200px;
         margin:auto auto 2% 7.8%;
         display:inline-block;
     }
-    #index-instagram {
-        width:20%;
-        margin:auto 7.8% 2% auto;
-        float:right;
-    }
 }
-@media (max-width: 600px) {
-    #index-system {
-        width:86%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #fff;
-        border-radius:4px;
-        padding:4%;
-        display:none;
-    }
-    #index-snapchat {
-        width:90%;
-        margin:auto auto 2% 3%;
-        display:inline-block;
-        background-color:#fff;
-        padding:2%;
-        text-align:center;
-        border-radius:4px;
-    }
-    #index-snapchat img {
-        width:40%;
-    }
-    #index-system a {
-        color:#000;
-        font-weight:bolder;
-    }
-    #index-stream {
-        width:95%;
-        margin:2% auto 2% auto;
-    }
-    #index-twitter {
-        width:94%;
-        margin:2% auto 2% auto;
-        min-height:720;
-        max-height:720;
-    }
-}
+
 
 /* -- */
 /* Om */
@@ -170,128 +127,8 @@ body {
         border:0;
     }
 }
-@media (max-width: 600px) {
-    #om-container {
-        display:none;
-        width:87%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:4%;
-    }
-    #om-container divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #om-container hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-    #om-container2 {
-        display:none;
-        width:87%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:4%;
-    }
-    #om-container2 divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #om-container2 hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-}
-
-/* RascoBots */
-
-@media (min-width: 600px) {
-    #RascoBots-container {
-        display:none;
-        width:80%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:2%;
-        border-radius:4px;
-    }
-    #RascoBots-container divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #RascoBots-container hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-    #RascoBots-container2 {
-        display:none;
-        width:80%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:2%;
-        border-radius:4px;
-    }
-    #RascoBots-container2 divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #RascoBots-container2 hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-}
-@media (max-width: 600px) {
-    #RascoBots-container {
-        display:none;
-        width:87%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:4%;
-    }
-    #RascoBots-container divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #RascoBots-container hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-    #RascoBots-container2 {
-        display:none;
-        width:87%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:4%;
-    }
-    #RascoBots-container2 divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #RascoBots-container2 hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-}
 
 
-/* -- */
 /* Gear */
 
 @media (min-width: 600px) {
@@ -325,40 +162,6 @@ body {
     }
     #gear-container .komponent a {
         float:right;
-        margin:1.6% 5% 0% 0%;
-        font-size:20px;
-        color:#111;
-    }
-}
-@media (max-width: 600px) {
-    #gear-container {
-        display:none;
-        width:87%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #111;
-        padding:4%;
-    }
-    #gear-container divtitle {
-        color:#111;
-        font-size:40px;
-        font-weight:900;
-    }
-    #gear-container hr {
-        height:2px;
-        background-color:#170df3;
-        border:0;
-    }
-    #gear-container .komponent {
-        background-color:#fff;
-        padding:5%;
-        width:100;
-        margin:1% auto auto auto;
-    }
-    #gear-container .komponent img {
-        width:10%;
-    }
-    #gear-container .komponent a {
         margin:1.6% 5% 0% 0%;
         font-size:20px;
         color:#111;
