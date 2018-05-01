@@ -36,6 +36,7 @@ body {
     /* background:url(../assets/bilder/ep_naturalblack.png); */
 }
 
+
 p{
   font-family: FontSemiBold;
   text-align: center;
@@ -45,13 +46,20 @@ p{
 a{
   font-family: FontSemiBold;
   text-align: center;
-  color: #ed4040;
+  color: #ffe382;
+  text-decoration: none;
 }
 
 h1{
-  font-family: Molot;
+  font-family: FontSemiBold;
   text-align: center;
   color: #FFF;
+}
+
+h3{
+  font-family: FontSemiBold;
+  text-align: center;
+  color: #ed4040;
 }
 
 .topnav {
@@ -115,36 +123,24 @@ h1{
         display: none;
     }
 
-    #index-snapchat {
-        width: 56%;
-        margin: auto auto 2% 7.8%;
-        display: inline-block;
-        background-color: #fff;
-        padding: 2%;
-        text-align: center;
-        border-radius: 4px;
-    }
-
     #index-system a {
         color: #000;
         font-weight: bolder;
     }
     #index-stream {
-        width: 60%;
-        margin: auto auto 2% 7.8%;
-        display: inline-block;
+      width: 60%;
+      margin: auto auto 2% 7.8%;
+      display: inline-block;
+      padding-left: 12%;
+      padding-bottom: 20%;
+      padding-top: 3%;
     }
 
-    #index-twitter {
-        width: 20%;
-        margin: auto 7.8% 2% auto;
-        float: right;
-    }
 }
 
 @media (max-width: 600px) {
     #index-system {
-        width: 86%;
+        width: 100%;
         margin: 2% auto 2% auto;
         background-color: #fff;
         border: px solid #fff;
@@ -159,20 +155,20 @@ h1{
     }
 
     #index-stream {
-        width: 95%;
+        width: 100%;
         margin: 2% auto 2% auto;
     }
 }
 
 /* -- */
-/* Om */
+/* Om til 1-2*/
 
 @media (min-width: 600px) {
     #om-container {
         display: none;
         width: 80%;
         margin: 2% auto 2% auto;
-        background-color: #fff;
+        background-color: #a5a5a5;
         border: 2px solid #111;
         padding: 2%;
         border-radius: 4px;
@@ -191,7 +187,7 @@ h1{
         display: none;
         width: 80%;
         margin: 2% auto 2% auto;
-        background-color: #fff;
+        background-color: #a5a5a5;
         border: 2px solid #111;
         padding: 2%;
         border-radius: 4px;
@@ -212,7 +208,7 @@ h1{
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
-        background-color: #fff;
+        background-color: #a5a5a5;
         border: 2px solid  #111;
         padding: 4%;
     }
@@ -230,7 +226,7 @@ h1{
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
-        background-color: #fff;
+        background-color: #a5a5a5;
         border: 2px solid #111;
         padding: 4%;
     }
@@ -245,7 +241,89 @@ h1{
         border :0;
     }
 }
-/* -- */
+/* ------------------------------------- */
+/* Om til 3-4 */
+
+@media (min-width: 600px) {
+    #om-container3 {
+        display: none;
+        width: 80%;
+        margin: 2% auto 2% auto;
+        background-color: #a5a5a5;
+        border: 2px solid #111;
+        padding: 2%;
+        border-radius: 4px;
+    }
+    #om-container3 divtitle {
+        color: #111;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    #om-container3 hr {
+        height: 2px;
+        background: linear-gradient(to right, #ed4040, #5752E2);
+        border: 0;
+    }
+    #om-container4 {
+        display: none;
+        width: 80%;
+        margin: 2% auto 2% auto;
+        background-color: #a5a5a5;
+        border: 2px solid #111;
+        padding: 2%;
+        border-radius: 4px;
+    }
+    #om-container4 divtitle {
+        color: #111;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    #om-container4 hr {
+        height: 2px;
+        background: linear-gradient(to right, #ed4040, #5752E2);
+        border: 0;
+    }
+}
+@media (max-width: 600px) {
+    #om-container3 {
+        display: none;
+        width: 87%;
+        margin: 2% auto 2% auto;
+        background-color: #a5a5a5;
+        border: 2px solid  #111;
+        padding: 4%;
+    }
+    #om-container3 divtitle {
+        color: #111;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    #om-container3 hr {
+        height: 2px;
+        background: linear-gradient(to right, #ed4040, #5752E2);
+        border: 0;
+    }
+    #om-container4 {
+        display: none;
+        width: 87%;
+        margin: 2% auto 2% auto;
+        background-color: #a5a5a5;
+        border: 2px solid #111;
+        padding: 4%;
+    }
+    #om-container4 divtitle {
+        color: #111;
+        font-size :40px;
+        font-weight: 900;
+    }
+    #om-container4 hr {
+        height: 2px;
+        background: linear-gradient(to right, #ed4040, #5752E2);
+        border :0;
+    }
+}
+
+/* ------------------------------------- */
 /* Gear */
 
 @media (min-width: 600px) {
@@ -322,13 +400,12 @@ h1{
 /* footer */
 
 footer{
-  padding-bottom: 20px;
+padding-top: 600px;
 }
 
 footer p{
   text-align: center;
   color: #FFF;
-  padding-top: 600px;
 }
 
 /* -- */

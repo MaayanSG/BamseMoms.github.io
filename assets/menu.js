@@ -8,6 +8,12 @@ $(document).ready(function(){
         $("#om-container2").hide(100)
     });
     $(".hjem").click(function(){
+        $("#om-container3").hide(100)
+    });
+    $(".hjem").click(function(){
+        $("#om-container4").hide(100)
+    });
+    $(".hjem").click(function(){
         $("#gear-container").hide(100)
     });
     $(".hjem").click(function(){
@@ -27,6 +33,12 @@ $(document).ready(function(){
     $(".om").click(function(){
         $("#om-container2").delay(150).show(500)
     });
+    $(".om").click(function(){
+        $("#om-container3").delay(150).show(500)
+    });
+    $(".om").click(function(){
+        $("#om-container4").delay(150).show(500)
+    });
 
 
     /* "Gear" i menyen */
@@ -39,6 +51,12 @@ $(document).ready(function(){
     });
     $(".gear").click(function(){
         $("#om-container2").hide(100)
+    });
+    $(".gear").click(function(){
+        $("#om-container3").hide(100)
+    });
+    $(".gear").click(function(){
+        $("#om-container4").hide(100)
     });
     $(".gear").click(function(){
         $("#gear-container").delay(150).show(500)
