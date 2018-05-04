@@ -118,8 +118,9 @@ footer p{
         font-weight: bolder;
     }
     #index-stream {
-        width: 90%;
-        margin: auto auto 2% 2.8%;
+        width:95%;
+        margin-left: 3%;
+        margin-top: 5%;
         display: inline-block;
     }
 }
