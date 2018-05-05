@@ -8,22 +8,20 @@
         <link href="assets/style.css" rel="stylesheet">
         <script src="assets/menu.js"></script>
         <script src="assets/text-animation.js"></script>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-    </head>
+        <script type="text/javascript">
 
+$(document).ready(function(){
+
+	$('#fadein').fadeIn(1000);
+
+});
+
+</script>
+<div id="fadein" style="display:none;">
   <div class="topnav" id="myTopnav">
-      <a href="#hjem" class="hjem">BAMSEMOMS</a>
-        <a href="#om" class="om">OM</a>
-        <a href="#gear" class="gear">GEAR</a>
+      <a href="#" class="hjem">BAMSEMOMS</a>
+        <a href="#" class="om">OM</a>
+        <a href="#" class="gear">GEAR</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
@@ -125,3 +123,4 @@
        </footer>
   </body>
 </html>
+</div>
