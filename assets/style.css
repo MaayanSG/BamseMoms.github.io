@@ -19,9 +19,7 @@
     src: url(fonts/FrancoisOne-Regular.ttf);
 }
 
-
 /* GLOBAL */
-
 html, body{
   margin: 0;
     background:  url(../assets/bilder/blackbg1.png);
@@ -109,9 +107,8 @@ footer p{
         text-align: left;
     }
 }
-
-
 /* -------- */
+/* index */
 
 @media (min-width: 600px) {
     #index-system {
@@ -152,9 +149,7 @@ footer p{
         margin:2% auto 2% auto;
     }
 }
-
-
-/* -- */
+/* -------- */
 /* Om til 1-2*/
 
 @media (min-width: 600px) {
@@ -239,8 +234,7 @@ footer p{
         border :0;
     }
 }
-/* ------------------------------------- */
-
+/* -------- */
 /* Gear */
 
 @media (min-width: 600px) {
@@ -315,3 +309,4 @@ footer p{
         color: #111;
     }
 }
+/* -------- */
