@@ -9,16 +9,6 @@
     src: url(fonts/light.otf);
 }
 
-@font-face {
-    font-family: #####;
-    src: url(fonts/fontawesome-webfont.ttf);
-}
-
-@font-face {
-    font-family: google;
-    src: url(fonts/FrancoisOne-Regular.ttf);
-}
-
 /* GLOBAL */
 html, body{
   margin: 0;
