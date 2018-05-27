@@ -149,6 +149,7 @@ footer p{
 @media (min-width: 600px) {
     #om-container {
         font-family: fortinite;
+        color: #111;
         font-size: 30px;
         display: none;
         width: 80%;
@@ -159,7 +160,7 @@ footer p{
         border-radius: 4px;
     }
     #om-container divtitle {
-        color: #111;
+        color: #FFF;
         font-size: 40px;
         font-weight: 900;
     }
@@ -180,7 +181,7 @@ footer p{
         border-radius: 4px;
     }
     #om-container2 divtitle {
-        color: #111;
+        color: #FFF;
         font-size: 40px;
         font-weight: 900;
     }
@@ -192,6 +193,7 @@ footer p{
 }
 @media (max-width: 600px) {
     #om-container {
+        color: #FFF;
         font-family: fortinite;
         display: none;
         width: 87%;
@@ -212,6 +214,7 @@ footer p{
     }
     #om-container2 {
         font-family: fortinite;
+        color: #111;
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
@@ -220,7 +223,7 @@ footer p{
         padding: 4%;
     }
     #om-container2 divtitle {
-        color: #111;
+        color: #FFF;
         font-size: 40px;
         font-weight: 900;
     }
