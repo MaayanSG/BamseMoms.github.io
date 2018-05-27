@@ -9,15 +9,20 @@
     src: url(fonts/light.otf);
 }
 
+@font-face {
+    font-family: fortinite;
+    src: url(fonts/fortinite.ttf);
+}
+
 /* GLOBAL */
 html, body{
-  margin: 0;
+    margin: 0;
     background:  url(../assets/bilder/blackbg1.png);
   /* background: linear-gradient(to right, #ed4040, #5752E2); */
 }
 
 a{
-  font-family: FontBold;
+  font-family: fortinite;
   text-align: center;
   color: #ff5151;
   text-decoration: none;
@@ -28,12 +33,12 @@ a:hover{
 }
 
 p{
-  font-family: FontLight;
+  font-family: fortinite;
   text-align: center;
 }
 
 h1{
-  font-family: FontLight;
+  font-family: fortinite;
   text-align: center;
   color: #FFF;
 }
@@ -51,7 +56,6 @@ footer p{
 /* CLASS */
 
 .topnav {
-    font-family: FontBold;
     overflow: hidden;
     background-color: #2b2c2d;
     padding: 0 0 0 3%;
@@ -64,7 +68,7 @@ footer p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 30px;
     margin-right:1%;
 }
 
@@ -144,7 +148,8 @@ footer p{
 
 @media (min-width: 600px) {
     #om-container {
-        font-family: google;
+        font-family: fortinite;
+        font-size: 30px;
         display: none;
         width: 80%;
         margin: 2% auto 2% auto;
@@ -164,7 +169,8 @@ footer p{
         border: 0;
     }
     #om-container2 {
-        font-family: google;
+        font-family: fortinite;
+        font-size: 30px;
         display: none;
         width: 80%;
         margin: 2% auto 2% auto;
@@ -186,7 +192,7 @@ footer p{
 }
 @media (max-width: 600px) {
     #om-container {
-        font-family: google;
+        font-family: fortinite;
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
@@ -205,23 +211,23 @@ footer p{
         border: 0;
     }
     #om-container2 {
-        font-family: google;
+        font-family: fortinite;
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
         background-color: #a5a5a5;
-        border: 2px solid #111;
+        border: 2px solid  #111;
         padding: 4%;
     }
     #om-container2 divtitle {
         color: #111;
-        font-size :40px;
+        font-size: 40px;
         font-weight: 900;
     }
     #om-container2 hr {
         height: 2px;
         background: linear-gradient(to right, #ed4040, #5752E2);
-        border :0;
+        border: 0;
     }
 }
 /* -------- */
@@ -229,7 +235,7 @@ footer p{
 
 @media (min-width: 600px) {
     #gear-container {
-        font-family: google;
+        font-family: fortinite;
         display: none;
         width: 80%;
         margin:2% auto  2% auto;
@@ -266,7 +272,7 @@ footer p{
 }
 @media (max-width: 600px) {
     #gear-container {
-        font-family: google;
+        font-family: fortinite;
         display: none;
         width: 87%;
         margin: 2% auto 2% auto;
