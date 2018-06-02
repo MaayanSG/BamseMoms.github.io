@@ -17,7 +17,8 @@
 /* GLOBAL */
 html, body{
     margin: 0;
-    background:  url(../assets/bilder/blackbg1.png);
+    background-color: #0099ff;
+    /* background:  url(../assets/bilder/blackbg1.png); */
   /* background: linear-gradient(to right, #ed4040, #5752E2); */
 }
 
@@ -50,7 +51,7 @@ footer{
 footer p{
   font-family: FontBold;
   text-align: center;
-  color: #ff5151;
+  color: #FFF;
 }
 /* -------- */
 /* CLASS */

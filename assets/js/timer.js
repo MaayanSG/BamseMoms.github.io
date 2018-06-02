@@ -17,6 +17,6 @@ document.getElementById("timer").innerHTML = days + "d " + hours + "h "
 // If the count down is over, write some text 
 if (distance < 0) {
 clearInterval(countdownfunction);
-document.getElementById("timer").innerHTML = "EXPIRED";
+document.getElementById("timer").innerHTML = "FERDIG!";
 }
 }, 1000);
