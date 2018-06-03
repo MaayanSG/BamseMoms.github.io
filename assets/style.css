@@ -104,46 +104,10 @@ footer p{
 }
 /* -------- */
 /* index */
+#index{
+    padding-top: 20%;
+}
 
-@media (min-width: 600px) {
-    #index-system {
-        width:82%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #fff;
-        border-radius:4px;
-        padding:1%;
-        display:none;
-    }
-    #index-system a {
-        color:#000;
-        font-weight:bolder;
-    }
-    #index-stream {
-        width:60%;
-        margin:auto auto 2% 20%;
-        display:inline-block;
-    }
-}
-@media (max-width: 600px) {
-    #index-system {
-        width:86%;
-        margin:2% auto 2% auto;
-        background-color:#fff;
-        border:2px solid #fff;
-        border-radius:4px;
-        padding:4%;
-        display:none;
-    }
-    #index-system a {
-        color:#000;
-        font-weight:bolder;
-    }
-    #index-stream {
-        width:95%;
-        margin:2% auto 2% auto;
-    }
-}
 /* -------- */
 /* Om til 1-2*/
 
