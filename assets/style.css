@@ -45,7 +45,7 @@ h1{
 }
 
 footer{
-  padding-top: 600px;
+  padding-top: 1990px;
 }
 
 footer p{
@@ -105,8 +105,11 @@ footer p{
 /* -------- */
 /* index */
 #index{
-    padding-top: 20%;
+    
+    
 }
+
+
 
 /* -------- */
 /* Om til 1-2*/
@@ -158,7 +161,7 @@ footer p{
 }
 @media (max-width: 600px) {
     #om-container {
-        color: #FFF;
+        color: #111;
         font-family: fortinite;
         display: none;
         width: 87%;
