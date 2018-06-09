@@ -109,8 +109,6 @@ footer p{
     
 }
 
-
-
 /* -------- */
 /* Om til 1-2*/
 
@@ -133,7 +131,7 @@ footer p{
         font-weight: 900;
     }
     #om-container hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
@@ -154,7 +152,7 @@ footer p{
         font-weight: 900;
     }
     #om-container2 hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
@@ -176,7 +174,7 @@ footer p{
         font-weight: 900;
     }
     #om-container hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
@@ -196,7 +194,7 @@ footer p{
         font-weight: 900;
     }
     #om-container2 hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
@@ -221,7 +219,7 @@ footer p{
         font-weight: 900;
     }
     #gear-container hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
@@ -257,7 +255,7 @@ footer p{
         font-weight: 900;
     }
     #gear-container hr {
-        height: 2px;
+        height: 3px;
         background: linear-gradient(to right, #ed4040, #5752E2);
         border: 0;
     }
