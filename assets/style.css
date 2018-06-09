@@ -14,14 +14,10 @@
     src: url(fonts/fortinite.ttf);
 }
 
-
-
-
 /* GLOBAL */
 html, body{
     margin: 0;
     background-color: #0099ff;
-    font-family: fortinite;
     /* background:  url(../assets/bilder/blackbg1.png); */
   /* background: linear-gradient(to right, #ed4040, #5752E2); */
 }
@@ -110,8 +106,7 @@ footer p{
 /* index */
 #index{
     margin: 5%;
-    padding-top: 90px;
-
+    
 }
 
 
