@@ -20,3 +20,4 @@ clearInterval(countdownfunction);
  document.getElementById("timer").innerHTML = "INNEN 24 TIMER KOMMER UPDATERING!";
 }
 }, 0);
+
