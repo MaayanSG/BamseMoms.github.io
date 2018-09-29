@@ -3,8 +3,8 @@
 body{
       margin: 0;
       padding: 0;
-      background: #ff9854; 
-       background:  url(img/bg.jpeg) no-repeat;
+      /*background: #ff9854; */
+      background:  url(img/bg.jpeg) no-repeat;
   }
 
   .box{
