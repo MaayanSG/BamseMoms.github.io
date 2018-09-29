@@ -4,17 +4,17 @@ body{
       margin: 0;
       padding: 0;
       background: #ff9854; 
-       /* background:  url(img/bg.jpeg);*/
+       background:  url(img/bg.jpeg) no-repeat;
   }
 
   .box{
       width: 450px;
       background: rgba(0, 0, 0, 0.4);
-      padding: 40px;
+      padding: 0px;
       text-align: center;
       margin: auto;
       margin-top: 5%;
-      margin-bottom: 5%;
+      margin-bottom: 1%;
       color: white;
       font-family: 'Century Gothic',sans-serif;
   }
