@@ -13,6 +13,26 @@ $(".homeSouth").click(function() {
         scrollTop: $(".aboutMe").offset().top - offset},'slow');
 });
 
+function textShift() {
+    var width = $(window).width();
+    if(!pathToggle && (width < 408 || (width < 992 && width >= 768))) {
+        document.getElementById('pathLink').innerHTML = "pathLink";
+        pathToggle = 1;
+    }
+    else if (pathToggle && ((width >= 408 && width < 768) || width >= 992)) {
+        document.getElementById('pathLink').innerHTML = "Prosjekter";
+        pathToggle = 0;
+    }
+    if(!psdToggle && $(window).width() < 397) {
+        document.getElementById('PSDPlug').innerHTML = "GitHub";
+        psdToggle = 1;
+    }
+    else if (psdToggle && $(window).width() >= 397) {
+        psdToggle = 0;
+        document.getElementById('PSDPlug').innerHTML = "32";
+    }
+}
+
 var mouseOverToggle = 1;
 function mouseOver() {
     mouseOverToggle++;

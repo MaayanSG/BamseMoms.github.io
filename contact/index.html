@@ -54,33 +54,38 @@
 
                 <!-- <img>devon.proj@gmail.com</img> -->
                 <form action="https://formspree.io/pondern12@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://BamseMoms.github.io/" />
+                    <input type="hidden" name="_next" value="send/" />
+                    <input type="hidden" name="_subject" value="BamseMoms.Github.Io Kontakt" />
                     <div class="form-group row">
-                      <label for="name" class="col-2 col-form-label">Name</label>
-                      <div class="col-10">
-                          <input class="form-control" name="name" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="email" class="col-2 col-form-label rp">Email address</label>
+                        <label for="name" class="col-2 col-form-label">Name</label>
                         <div class="col-10">
-                            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
-                                <!-- <small id="emailHelp" class="form-text text-muted">Address for me to reply.</small> -->
+                            <input class="form-control" type="name" name="name" aria-describedby="emailHelp">
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="subject" class="col-2 col-form-label">Subject</label>
-                            <div class="col-10">
-                                <input class="form-control" name="subject" aria-describedby="emailHelp">
-                            </div>
-                    </div>
-                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="10"></textarea>
-                    </div>
-
-                    <div class="cenX down">
-                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary btn-lg">
+                      </div>
+                      <div class="form-group row">
+                          <label for="email" class="col-2 col-form-label rp">Email address</label>
+                          <div class="col-10">
+                              <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                                  <!-- <small id="emailHelp" class="form-text text-muted">Address for me to reply.</small> -->
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="subject" class="col-2 col-form-label">Subject</label>
+                              <div class="col-10">
+                                <select name="subject">
+                                    <option value="Annet">Annet</option>
+                                    <option value="Sponsord">Sponsord</option>
+                                    <option value="Jobb">Jobb</option>
+                                </select>
+                              </div>
+                      </div>
+                       <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="10"></textarea>
+                      </div>
+  
+                      <div class="cenX down">
+                        <input type="submit" value="Send" class="btn btn-primary btn-lg">
                     </div>
                 </form>
             </div>

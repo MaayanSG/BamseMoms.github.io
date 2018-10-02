@@ -29,10 +29,10 @@ function navScroll(){
                 "padding-bottom":"10px",
                 "padding-top":"10px"
             })
-            if(!(filename === 'timelapse-auto-ramp') && !(filename === 'pathfinding')
-                && !(filename === 'air-conditioner-DIY') && !(filename === 'contact')
-                && !(filename === 'software') && !(filename === 'electronics')
-                && !(filename === 'films') && !(filename === 'photography')) {
+            if(!(filename === 'pathfinding')
+                && !(filename === 'air-conditioner-DIY') && !(filename === 'kontakt')
+                && !(filename === 'koding') && !(filename === 'Prosjekter')
+                && !(filename === 'koding') && !(filename === 'Prosjekter')) {
                 $(".scrollN").css({
                     "color":"white"
                 })

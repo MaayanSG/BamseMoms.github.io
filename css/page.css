@@ -124,7 +124,7 @@ body, html {
     color: white;
 }
 
-.softwareImg {
+.kodingImg {
     background-color: #282828;
 
     background-position: center;
@@ -154,9 +154,6 @@ body, html {
     color: #42536d;
 }
 
-.videoBack {
-    background-color: #E62117;
-}
 
 .centerBtn {
     margin: 40px;
@@ -166,16 +163,16 @@ body, html {
     margin-right: auto;
 }
 
-.softwareDiv {
+.kodingDiv {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.softwareTitle {
+.kodingTitle {
     color: #b5b5b5;
 }
 
-.electronicsBack {
+.ProsjekterBack {
     /* background-image: url("../images/IMG_1716.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
@@ -195,29 +192,6 @@ body, html {
     font-size: 2em;
     padding-left: 50px;
     padding-bottom: 40px;
-}
-
-.learnFilmsBtn {
-    border-color: #ffdbdb;
-    background-color: #ffdbdb;
-    color: #E62117;
-}
-
-.learnFilmsBtn:hover {
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    background-color: white;
-    border-color: white;
-    color: #E62117;
-}
-
-.photoBack {
-    /* background-image: url("../images/IMG_7509.JPG"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* padding-left: 0px;
-    padding-right: 0px; */
 }
 
 .backBlur {
@@ -244,7 +218,7 @@ body, html {
 }
 
 @media (min-width: 768px) {
-    .softwareDiv, .electronicsDiv {
+    .kodingDiv, .ProsjekterDiv {
         padding-top: 60px;
         padding-bottom: 80px;
     }
