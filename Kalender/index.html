@@ -25,6 +25,18 @@
 <script src="/includes/bootstrap.min.js"></script>
     </head>
     <body>
+
+            <script>
+                    <!--
+                    function timedRefresh(timeoutPeriod) {
+                        setTimeout("location.reload(true);",timeoutPeriod);
+                    }
+                    
+                    window.onload = timedRefresh(120000);
+                    
+                    //   -->
+                    </script>
+
         <link rel="stylesheet" type="text/css" href="/css/nav.css"/>
 <nav class="navbar fixed-top navbar-expand-lg toggle-height" id="global-nav">
      <div class="container">
@@ -34,84 +46,46 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li> <a class="nav-link scrollN" href="/Prosjekter/"> Prosjekter </a></li>
-        <li><a class="nav-link scrollN" href="/Kalender/"> Kalender </a></li>
-        <li><a class="nav-link scrollN" href=""></a></li>
-      </ul>
-      <ul class="navbar-nav">
-          <li><a class="nav-link scrollN" href="/contact"> Kontakt </a></li>
-      </ul>
-    </div>
-     </div>
+            <ul class="navbar-nav mr-auto">
+              <li> <a class="nav-link scrollN" href="Prosjekter/"> Prosjekter </a></li>
+              <li> <a class="nav-link scrollN" href="/Kalender/"> Kalender </a></li>
+              <li><a class="nav-link scrollN" href=" "> </a></li>
+              <li><a class="nav-link scrollN" href=" "> </a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li><a class="nav-link scrollN" href="/contact">Kontakt</a></li>
+            </ul>
  </nav>
  <script type="text/javascript" src="/scripts/nav.js"></script>
 
  <!-- Testing random additions for github in atom -->
         <link rel="stylesheet" href="css/page.css">
-
+ 
         <div class="homeImg container-fluid">
             <div class="homeDiv center container">
-                <h1 class="titleMain cenX"> Prosjekter </h1>
+                <h1 class="titleMain cenX"> Kalender</h1>
+                    <h3 class="subTitle"> NETTSIDEN AUTO REFRESHER HVERT 2 MINUTT.</h3>
+                        <h3 class="subTitle"> FOR OG OPPDATERE KALENDERN.</h3>
 
-                <div class="row rowBackSS"></div>
-                <h3 class="subTitle"> WEB | DISCORD.JS | SPILL</h3>
-            </div>
-
-            <div class="homeSouth">
-                <h4><a class="subTitle noColor" href="#"> PROSJEKTENE </a></h4>
-                <button class="smoothScrollBtn" type="button"><img src="/images/Down-Arrow.png" width="30"/></button>
             </div>
         </div>
-
+        
         <a class="anchor" id="top"></a>
-
-        <div class="container-fluid sec temp">
-            <div class="container">
-
-                <div class="borderProj">
-                    <a href="discharge-protection-circuit" class="noColor">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12">
-                                <span class="helper"></span><img src="images/rasco.png" class="projImg"></img>
-                            </div>
-                            <div class="projText col-lg-8 col-md-12">
-                                <h3 class="regTitle"> DISCORD ROBOT </h3>
-                                <p class="subP pad0 italic"> Discord robot med navnet rasco</p>
-                                <p class="subP desc"> Denne discord roboten er den beste jeg har laget den er enkel og bruke.
-                                  den har alt du trenger til discord servern din.</p>                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="borderProj">
-                    <a href="air-conditioner-DIY" class="noColor">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12">
-                                <span class="helper"></span><img src="images/html.png" class="projImg"></img>
-                            </div>
-                            <div class="projText col-lg-8 col-md-12">
-                                <h3 class="regTitle"> NETTSIDE </h3>
-                                <p class="subP desc"> Her har du alle nettsiden som jeg har laget siden jeg begynte med <b>HTML,CSS,JS</b></p>                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-         
+        <iframe style=" margin-right:10%; margin-left:10%;  width: 80%; height:100%;" src="https://outlook.live.com/owa//calendar/00000000-0000-0000-0000-000000000000/d18f861c-7eaa-4038-93a3-854c7ef32a23/cid-32CA923FB63CAF42/index.html"></iframe>
         <div class="container-fluid btnLinks extPad">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <div class="leftCenter">
-                            <h3 class="sub2"> BIDRA </h3>
+                            <h3 style="padding-top: 90px;" class="sub2 "> BIDRA </h3>
                             <p class="subText"> Bli med på et prosjekt </p>
                             <a class="btn btn-secondary btn-lg w100" href="/contact" role="button"> Kontakt Meg </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
+    </div>
 
         <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 <footer class="footer container-fluid">

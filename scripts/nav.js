@@ -30,7 +30,7 @@ function navScroll(){
                 "padding-top":"10px"
             })
             if(!(filename === 'pathfinding')
-                && !(filename === 'air-conditioner-DIY') && !(filename === 'kontakt')
+                && !(filename === 'Kalender') && !(filename === 'contact')
                 && !(filename === 'koding') && !(filename === 'Prosjekter')
                 && !(filename === 'koding') && !(filename === 'Prosjekter')) {
                 $(".scrollN").css({
