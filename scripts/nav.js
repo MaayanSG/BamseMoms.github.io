@@ -29,7 +29,7 @@ function navScroll(){
                 "padding-bottom":"10px",
                 "padding-top":"10px"
             })
-            if(!(filename === 'pathfinding')
+            if(!(filename === 'Prosjekter')
                 && !(filename === 'Kalender') && !(filename === 'contact')
                 && !(filename === 'koding') && !(filename === 'Prosjekter')
                 && !(filename === 'koding') && !(filename === 'Prosjekter')) {
