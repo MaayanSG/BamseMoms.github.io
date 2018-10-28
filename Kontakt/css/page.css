@@ -55,7 +55,7 @@ body .scrollN, body .scrollN:hover {
 }
 
 .down{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 @media (max-height: 930px) {

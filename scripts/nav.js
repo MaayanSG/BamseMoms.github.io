@@ -30,9 +30,9 @@ function navScroll(){
                 "padding-top":"10px"
             })
             if(!(filename === 'Prosjekter')
-                && !(filename === 'Kalender') && !(filename === 'contact')
+                && !(filename === 'Kalender') && !(filename === 'Kalender')
                 && !(filename === 'koding') && !(filename === 'Prosjekter')
-                && !(filename === 'koding') && !(filename === 'Prosjekter')) {
+                && !(filename === 'Kontakt') && !(filename === 'Prosjekter')) {
                 $(".scrollN").css({
                     "color":"white"
                 })
