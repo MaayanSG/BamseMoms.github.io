@@ -20,6 +20,23 @@ body {
   opacity: 0;
 }
 
+.containerskill {
+  margin-bottom: 10%;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.html {width: 90%; color: #000; background-color: #f48641;}
+.css {width: 80%; color: #000; background-color: #42aaf4;}
+.js {width: 3.1%; color: #000; background-color: #f4d641;}
+.php {width: 10%; color: #000; background-color: #415bf4;}
+
 img, 
 embed,
 object,
