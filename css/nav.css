@@ -23,6 +23,11 @@ body .scrollN, body .scrollN:hover {
     background-color: rgba(220,220,220,0.15);
 }
 
+
+button{
+  font-family: 'Gravity-Regular';
+}
+
 /* Medium devices and smaller (tablets, 991px and lower width)
     For the navbar toggle mode */
     @media (max-width: 991px) {
