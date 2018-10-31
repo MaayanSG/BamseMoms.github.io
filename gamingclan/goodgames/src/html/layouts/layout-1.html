@@ -1,0 +1,47 @@
+{% include "layouts/_head.html" %}
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+<body{{ ' class="nk-page-boxed"' | safe if page_boxed }}>
+    {% if nav %}
+        {% include "shared/page-nav.html" %}
+    {% endif %}
+    {% if nav_mobile and nav %}
+        {% include "shared/page-nav-mobile.html" %}
+    {% endif %}
+
+    <div class="nk-main">
+        {% if breadcrumbs %}
+            {% include "shared/page-breadcrumbs.html" %}
+        {% elif nav %}
+            <div class="nk-gap-2"></div>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+
+        {% if footer %}
+            {% include "shared/page-footer.html" %}
+        {% endif %}
+    </div>
+
+    {% block after_content %}{% endblock %}
+
+    {% if background_top or background_bottom or background_fixed %}
+        {% include "shared/page-background.html" %}
+    {% endif %}
+
+    {% if nav_search %}
+        {% include "shared/modal-search.html" %}
+    {% endif %}
+
+    {% if nav_user %}
+        {% include "shared/modal-login.html" %}
+    {% endif %}
+
+    {% include "layouts/_foot.html" %}
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

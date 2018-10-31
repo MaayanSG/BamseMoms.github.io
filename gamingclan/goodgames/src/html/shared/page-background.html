@@ -1,0 +1,8 @@
+<!-- START: Page Background -->
+{% if background_fixed %}
+    <div class="nk-page-background-fixed" style="background-image: url('{{ background_fixed }}');"></div>
+{% else %}
+    {% if background_top %}<img class="nk-page-background-top" src="{{background_top}}" alt="">{% endif %}
+    {% if background_bottom %}<img class="nk-page-background-bottom" src="{{background_bottom}}" alt="">{% endif %}
+{% endif %}
+<!-- END: Page Background -->

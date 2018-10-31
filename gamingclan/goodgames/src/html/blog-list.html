@@ -1,0 +1,84 @@
+{% set header_title = 'Blog List' %}
+{% set background_top = 'assets/images/bg-top-3.png' %}
+{% set breadcrumbs = [
+    '<a href="index.html">Home</a>',
+    '<a href="#">Blog</a>',
+    '<span>Blog List</span>'
+] %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row vertical-gap">
+            <div class="col-lg-8">
+
+                <!-- START: Posts List -->
+                <div class="nk-blog-list">
+
+                    {% for post in posts %}
+                        <!-- START: Post -->
+                        <div class="nk-blog-post">
+                            <div class="row vertical-gap">
+                                <div class="col-md-5 col-lg-6">
+                                    <a href="{{ post.url }}" class="nk-post-img">
+                                        <img src="{{ post.thumb_lg }}" alt="{{ post.title }}">
+                                        <span class="nk-post-comments-count">{{ post.comments_count }}</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-7 col-lg-6">
+                                    <h2 class="nk-post-title h4"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+                                    <div class="nk-post-text">
+                                        {{ post.excerpt | safe }}
+                                    </div>
+
+                                    <div class="nk-post-by">
+                                        <img src="{{ users[post.by].avatar | safe }}" alt="{{ users[post.by].name | safe }}" class="rounded-circle" width="35"> by <a href="{{ users[post.by].url | safe }}">{{ users[post.by].name | safe }}</a> in {{ post.date }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Post -->
+                    {% endfor %}
+
+                    <!-- START: Pagination -->
+                    <div class="nk-pagination nk-pagination-center">
+                        <a href="#" class="nk-pagination-prev">
+                            <span class="ion-ios-arrow-back"></span>
+                        </a>
+                        <nav>
+                            <a class="nk-pagination-current" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <span>...</span>
+                            <a href="#">14</a>
+                        </nav>
+                        <a href="#" class="nk-pagination-next">
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div>
+                    <!-- END: Pagination -->
+                </div>
+                <!-- END: Posts List -->
+
+            </div>
+            <div class="col-lg-4">
+                <!--
+                    START: Sidebar
+
+                    Additional Classes:
+                        .nk-sidebar-left
+                        .nk-sidebar-right
+                        .nk-sidebar-sticky
+                -->
+                <aside class="nk-sidebar nk-sidebar-right nk-sidebar-sticky">
+                    {% include "shared/sidebar-all.html" %}
+                </aside>
+                <!-- END: Sidebar -->
+            </div>
+        </div>
+    </div>
+
+    <div class="nk-gap-2"></div>
+{% endblock %}
