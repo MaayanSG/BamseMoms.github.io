@@ -28,6 +28,10 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: $("#contact").offset().top
       }, 2000);
+    } else if (e.target.text === 'Kontakt') {
+      $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+      }, 2000);
     }
   }
   (function() {
@@ -61,5 +65,9 @@ $(document).ready(function() {
     );
   })();
   
-  
+  // scroll to top
+  document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+  });
 });

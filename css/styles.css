@@ -1,5 +1,6 @@
 /* ================================= 
   Base Styles
+  
 ==================================== */
 
 * {
@@ -13,6 +14,7 @@ html, body {
 }
 
 body {
+  scroll-behavior: smooth;
   font-family:  sans-serif;
   letter-spacing: 1px;
   line-height: 1.6;
@@ -37,10 +39,7 @@ body {
 .js {width: 3.1%; color: #000; background-color: #f4d641;}
 .php {width: 10%; color: #000; background-color: #415bf4;}
 
-img, 
-embed,
-object,
-video {
+img, embed,object,video {
   max-width: 100%;
 }
 
@@ -50,23 +49,15 @@ p {
   font-weight: 200;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5,
-a {
+h1, h2, h3, h4, h5,a {
   
 }
 
-h2,
-h3 {
+h2,h3 {
   margin-top: 0;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   color: #2EC3E8;
 }
 
@@ -84,10 +75,7 @@ ul li {
   display: inline-block;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus,select:focus,textarea:focus,button:focus {
   outline: none;
 }
 
@@ -153,14 +141,13 @@ nav ul > li:last-child {
 
 nav a {
   font-size: 1.2em;
-  transition: border-bottom 0.5s ease;
   font-weight: 200;
   letter-spacing: 2px;
 }
 
 nav a:hover {
   border-bottom: 1px solid #2EC3E8;  
-  padding-bottom: 0.5em;
+  padding-bottom: 10px;
 }
 
 .menu-dropdown > ul {
@@ -241,15 +228,11 @@ header button {
   font-weight: 300;
 }
 
-#header-status,
-#header-game {
+#header-status,#header-game {
   margin-right: 1em;
 }
 
-#header-status,
-#header-game,
-#hrs,
-#mins {
+#header-status,#header-game,#hrs,#mins {
   color: #7ED321;
 }
 
@@ -270,10 +253,7 @@ header button {
   max-width: 485px;
 }
 
-table,
-tr,
-td,
-th {
+table,tr,td,th {
   border: none;
 }
 
@@ -312,8 +292,7 @@ th {
   letter-spacing: 2px;
 }
 
-#contact h3,
-#contact h1 {
+#contact h3,#contact h1 {
   color: #fff;
 }
 
@@ -342,9 +321,7 @@ button:hover {
   cursor: pointer;
 }
 
-.form-group,
-.text-group,
- button {
+.form-group,.text-group, button {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
@@ -358,21 +335,16 @@ button:hover {
   margin-bottom: 1em;
 }
 
-input,
-label,
-textarea {
+input,label,textarea {
   width: 100%;
 }
 
-input,
-button,
-textarea {
+input,button,textarea {
   border-radius: 10px;
   border: none;
 }
 
-input,
-button {
+input,button {
   height: 48px;
 }
 
@@ -381,13 +353,11 @@ label {
   font-weight: 300;
 }
 
-input,
-textarea {
+input,textarea {
   margin-top: 0.15em;
 }
 
-input,
-textarea {
+input,textarea {
   padding-left: 0.75em;
   padding-bottom: 0.2em;
 }
@@ -415,15 +385,13 @@ textarea {
 
 /* ---- Form Submission ---- */
 
-#thank-you,
-#contact-error {
+#thank-you,#contact-error {
   text-align: center;
   padding: 7em 1em;
   line-height: 1.5;
 }
 
-#thank-you p,
-#contact-error p {
+#thank-you p,#contact-error p {
   color: #aaa;
   font-size: 1.2em;
   max-width: 550px;
@@ -442,8 +410,7 @@ textarea {
   color: red;
 }
 
-#thank-you img,
-#contact-error img {
+#thank-you img,#contact-error img {
   width: 5em;
 }
 
@@ -451,8 +418,7 @@ textarea {
   width: 5em;
 }
 
-#thank-you img:last-child,
-#contact-error img {
+#thank-you img:last-child,#contact-error img {
   width: 3em;
   margin-top: 3em;
 }
@@ -484,12 +450,6 @@ footer img {
 footer li {
   margin-right: 1em;
   margin-left: 1em;
-  transition: all 0.5s ease;
-}
-
-footer li:hover {
-  border-bottom: 1px solid #2EC3E8;
-  
 }
 
 /* ---- Layout Containers ---- */
@@ -527,14 +487,49 @@ footer li:hover {
   color: #aaa;
 }
 
-.status-online,
-.status-offline {
+.status-online,.status-offline {
   display: block;
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 2px;
   margin: 0.5em auto;
 }
+
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #333333;}
+
 
 /* ================================= 
   Media Queries
