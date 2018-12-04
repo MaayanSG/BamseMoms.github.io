@@ -34,37 +34,36 @@ $(document).ready(function() {
       }, 2000);
     }
   }
-  (function() {
-    var user_name, api_key, twitch_widget;
-  
-    user_name = "Varlem";
-    api_key = "5j0r5b7qb7kro03fvka3o8kbq262wwm";
-    twitch_widget = $("#twitch-widget");
-  
-    twitch_widget.attr("href", "https://twitch.tv/" + user_name);
-  
-    $.getJSON(
-      "https://api.twitch.tv/kraken/streams/" +
-        user_name +
-        "?client_id=" +
-        api_key +
-        "&callback=?",
-      function(data) {
-        if (data.stream) {
-          twitch_widget.html(
-            "<span class='online'></span> Online! Playing: " +
-              data.stream.game +
-              "<span class='viewers'>Viewers: " +
-              data.stream.viewers +
-              "</span>"
-          );
-        } else {
-          twitch_widget.html("<span class='offline'></span> Offline");
-        }
-      }
-    );
-  })();
-  
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="tid"
+  document.getElementById("tid").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("tid").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
   // scroll to top
   document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
     e.preventDefault();
