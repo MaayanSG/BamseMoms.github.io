@@ -24,7 +24,7 @@ body {
 
 /* The alert message box */
 .alert {
-  border: solid rgb(66, 65, 65);
+  border: solid #000;
   padding: 20px;
   background-color: #fc4646;
   color: #000;
@@ -56,10 +56,11 @@ p {
   font-size: .95em;
   margin-bottom: 1.5em;
   font-weight: 200;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5,a {
-  
+  color: #fff;
 }
 
 h2,h3 {
@@ -67,7 +68,7 @@ h2,h3 {
 }
 
 h1,h2,h3 {
-  color: #2EC3E8;
+  color: rgb(46, 127, 232);
 }
 
 a {
@@ -89,7 +90,7 @@ input:focus,select:focus,textarea:focus,button:focus {
 }
 
 a.button {
-  border: 1px solid #2EC3E8;
+  border: 1px solid rgb(46, 127, 232);
   border-radius: 5px;
   padding: 1em;
   display: inline-block;
@@ -100,13 +101,14 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #2EC3E8;
+  background-color: rgb(46, 127, 232);
   color: #fff;
 }
 
 .hidden {
   display: none;
 }
+
 
 /* ================================= 
   Base Layout Styles
@@ -122,7 +124,7 @@ nav {
 
 nav h1 {
   margin: 0;
-  color: #2EC3E8;
+  color: rgb(46, 127, 232);
   letter-spacing: 2px;
 }
 
@@ -131,7 +133,7 @@ nav h2 {
   padding-bottom: 0.25em;
   display: inline-block;
   color: #fff;
-  border-bottom: 1px solid #2EC3E8;
+  border-bottom: 1px solid rgb(46, 127, 232);
   cursor: pointer;
 }
 
@@ -155,7 +157,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 1px solid #2EC3E8;  
+  border-bottom: 1px solid rgb(46, 127, 232);  
   padding-bottom: 10px;
 }
 
@@ -166,7 +168,7 @@ nav a:hover {
 .menu-dropdown > ul > li {
   margin: 0;
   display: block;
-  border-bottom: 1px solid #2EC3E8;
+  border-bottom: 1px solid rgb(46, 127, 232);
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -195,7 +197,7 @@ nav a:hover {
 /* ---- Header ---- */
 
 header {
-  background: linear-gradient(rgba(68, 187, 255, 0.7), rgba(17, 34, 51, 0.7)), url("../images/dd.png"); 
+  background: linear-gradient(rgb(46, 127, 232), rgba(17, 34, 51, 0.7)), url("../images/dd.png"); 
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -221,7 +223,7 @@ header h1 {
 
 header button {
   background-color: none;
-  border: 1px solid #2EC3E8;
+  border: 1px solid rgb(46, 127, 232);
 }
 
 /* ---- Stream Details ---- */
@@ -250,7 +252,7 @@ header button {
 #about-schedule {
   padding-top: 6em;
   padding-bottom: 7em;
-  background-color: #F0F1F5;
+  background-color: #333;
 }
 
 #about-schedule h2 {
@@ -288,6 +290,7 @@ th {
 
 /* ------- Contact ------- */
 
+
 #contact {
   background-color: #34495e;
   padding: 3em 0;
@@ -322,7 +325,7 @@ th {
 button {
   display: block;
   box-shadow: none;
-  background-color: #2ecc71;
+  background-color: rgb(46, 127, 232);
   color: #fff;
 }
 
@@ -483,28 +486,44 @@ footer li {
 }
 /* ------- Twitch API Styles------- */
 
-.status-online {
-  background-color: #7ED321;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  color: #fff;
+.twitch-widget {
+  text-align: center;
   border-radius: 5px;
-  width: 85px;
-}
-
-.status-offline {
-  color: #aaa;
-}
-
-.status-online,.status-offline {
+  color: #fff;
   display: block;
-  font-size: 0.9em;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 0.5em auto;
+  margin: 25px 0;
+  padding: 10px;
+  text-decoration: none;
 }
 
+.twitch-widget:hover{
+  color: rgb(46, 127, 232);
+}
 
+.online,
+.offline {
+  border-radius: 5px;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.online {
+  background: ForestGreen;
+}
+
+.offline {
+  background: Crimson;
+}
+
+.viewers {
+  color: #fff;
+  display: block;
+  margin: 0 0 0 15px;
+  font-size: 0.8em;
+}
+
+/* ------- Phone------- */
 .dropbtn {
   color: white;
   padding: 16px;
@@ -539,6 +558,37 @@ footer li {
 
 .dropdown:hover .dropbtn {background-color: #333333;}
 
+/* ------- Scroll------- */
+#scroll {
+  position:fixed;
+  right:40px;
+  bottom:20px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#3498db;
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color:#e74c3c;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
+}
 
 /* ================================= 
   Media Queries
