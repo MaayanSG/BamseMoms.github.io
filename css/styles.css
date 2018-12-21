@@ -26,7 +26,12 @@ body {
 .alert {
   border: solid #000;
   padding: 20px;
-  background-color: #fc4646;
+  background-color: #fc9846;
+  /* colors
+  #fc4646 red
+  #fc9846 Orange
+  #4667fc Blue
+  */
   color: #000;
   margin-bottom: 15px;
 }
@@ -290,11 +295,10 @@ th {
 
 /* ------- Contact ------- */
 
-
 #contact {
   background-color: #34495e;
   padding: 3em 0;
-  color: #fff;
+  color: #fff; 
 }
 
 #contact h1 {
@@ -331,6 +335,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: #e74c3c;
 }
 
 .form-group,.text-group, button {
