@@ -97,7 +97,7 @@ $(document).ready(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
     clearInterval(countdownfunction);
-     document.getElementById("tid").innerHTML = "INNEN 24 TIMER KOMMER UPDATERING!";
+     document.getElementById("tid").innerHTML = "VI ER I 2020!";
     }
     }, 0);
     
