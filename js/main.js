@@ -74,7 +74,7 @@ $(document).ready(function() {
               "</span>"
           );
         } else {
-          twitch_widget.html("<span class='offline'></span> Offline");
+          twitch_widget.html("<span class='BamseMoms is offline'></span> BamseMoms is Offline");
         }
       }
     );

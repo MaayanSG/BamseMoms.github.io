@@ -269,30 +269,6 @@ header button {
   max-width: 485px;
 }
 
-table,tr,td,th {
-  border: none;
-}
-
-table {
-  border-radius: 5px;
-}
-
-td {
-  padding: 0.5em;
-}
-
-th {
-  background-color: #82b7ed;
-}
-
-.schedule-day {
-  background-color: #d6d6d8;
-}
-
-.schedule-times {
-  background-color: #fff;
-}
-
 /* ------- Contact ------- */
 
 #contact {
