@@ -82,7 +82,7 @@ $(document).ready(function() {
     // TIMER, SHOW GIVEAWAY HTML AFTER TIMER IS DONE //
 
     // Set the date we're counting down to
-    var countDownDate = new Date("feb 23, 2090 16:12:00").getTime();
+    var countDownDate = new Date("feb 23, 2099 00:00:00").getTime();
     // Update the count down every 1 second
     var countdownfunction = setInterval(function() {
     // Get todays date and time
@@ -139,3 +139,5 @@ var x = setInterval(function() {
     document.getElementById("tid").innerHTML = "VI ER I 2020!";
   }
 }, 1000);
+
+//https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue
