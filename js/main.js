@@ -1,3 +1,5 @@
+
+// nav bar //
 $(document).ready(function() {
 
   // Toggles hidden class for nav dropdown menu
@@ -35,6 +37,7 @@ $(document).ready(function() {
     }
   }
 
+  // Smooth scroll html //
   $(document).ready(function(){ 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 200) { 
@@ -48,6 +51,8 @@ $(document).ready(function() {
         return false; 
     }); 
 });
+
+// twitch API when streamer is online //
 
   (function() {
     var user_name, api_key, twitch_widget;
@@ -78,11 +83,11 @@ $(document).ready(function() {
         }
       }
     );
-
-    // TIMER, SHOW GIVEAWAY HTML AFTER TIMER IS DONE //
+       
+  // TIMER, SHOW GIVEAWAY HTML AFTER TIMER IS DONE //
 
     // Set the date we're counting down to
-    var countDownDate = new Date("feb 23, 2099 00:00:00").getTime();
+    var countDownDate = new Date("Feb 26, 2099 16:38:00").getTime();
     // Update the count down every 1 second
     var countdownfunction = setInterval(function() {
     // Get todays date and time
@@ -104,40 +109,12 @@ $(document).ready(function() {
     clearInterval(countdownfunction);
      document.getElementById("giveaway").innerHTML = '<div style=" text-align: center; border: 5px solid #111; border-radius: 4px; background: #2c3e50; background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);"><h1> GIVEAWAY </h1><p style=" font-size: 18px; "> Det er giveaway på <span style="color: rgb(46, 127, 232)">500KR </span><br><p><a href="https://twitch.tv/BamseMoms" style=" ont-weight: bold; color: rgb(46, 127, 232); font-size: 30px;">KLIKK HER</a></p></div>';
     }
-    }, 0);
-       
-         })();
+    }, 3000);
+    
+  })();
          
          
-       });
-       // TIMER, COUNTDOWN TO WE ARE IN 2020 //
-    // Set the date we're counting down to
-var countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+});
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="tid"
-  document.getElementById("tid").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("tid").innerHTML = "VI ER I 2020!";
-  }
-}, 1000);
-
-//https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue
+// Discord to see how many some are online <iframe style="border: none; " src="https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue"></iframe> //

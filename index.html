@@ -8,7 +8,7 @@
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
-  <!-- build:css css/styles.min.css -->
+  <!-- build:css css/styles.css -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- endbuild -->
@@ -41,7 +41,6 @@
       <div class="container">
         <img src="images/logo.png" alt="cirewho brand logo">
         <h1 id="title">BamseMoms Web Utvikling. </h1>
-        <iframe style=" margin-left: 10%; margin-top: 2%; border: none; " src="https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue"></iframe>
        <!--<a class="button" href="https://www.twitch.tv/BamseMoms" target="_blank">Se Twitch Stream</a>-->
       </div>
     </header>
@@ -102,6 +101,7 @@
           <h2> Prosjekter </h2>
           <p> jeg har laget mye nettsider og to discord roboter som funker men ikker er på en server for øyeblikket. Og har laget mye nettsider med HTML, CSS, JS.</p>
           <h2> Twitter </h2>
+          <iframe style=" margin-bottom: -25%; border: none; " src="https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue"></iframe>
           <a class="twitter-timeline" data-width="400" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/BamseMomss?ref_src=twsrc%5Etfw"></a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -132,8 +132,8 @@
                 <input type="text" id="last-name" name="EtterNavn" placeholder="EtterNavn...">
               </div>
               <div class="form-group">
-                <label for="mail">E-Post:</label>
-                <span id="emError" class="error-msg"></span>
+                <label for="mail">E-Post:</label> 
+                <span id="emError" class="error-msg"></span>  
                 <input type="email" id="mail" name="E-Post" placeholder="E-Post..." required>
               </div>
             </div>
@@ -146,9 +146,9 @@
                         <option value="Support">Support</option>
                       </optgroup>
                       <optgroup label="Webside Valg"></optgroup>
-                        <option value="Basic">70,- Basic</option>
-                        <option value="Standard">250,- Standard</option>
-                        <option value="Premium">760,- Premium</option>
+                        <option value="70,- Basic">70,- Basic</option>
+                        <option value="250,- Standard">250,- Standard</option>
+                        <option value="760,- Premium">760,- Premium</option>
                       </optgroup>
                       </select>
             </div>
@@ -176,11 +176,12 @@
       </div>
     </footer>
 
-  <!-- build:js js/main.min.js -->
+  <!-- Js scripts here -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/formvalidation.js"></script>    
     <script type="text/javascript" src="js/main.js"></script>
-  <!-- endbuild -->
+    <script type="text/javascript" src="js/timer-counter.js"></script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <!-- endbuild -->
 </body>
 </html>
