@@ -1,7 +1,8 @@
+
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
@@ -15,26 +16,35 @@ firebase.auth().onAuthStateChanged(function(user) {
       if(email_Verified){
 
         document.getElementById("verify_btn").style.display = "none";
+        document.getElementById("nettsidelink-btn").style.display = "block";
       } else {
 
         document.getElementById("verify_btn").style.display = "block";
-
+        document.getElementById("nettsidelink-btn").style.display = "none";
       }
 
-
-      document.getElementById("user_para").innerHTML = "Velkommen : " + email_id + "<br/>  Verified : " + email_Verified;
-  
+      document.getElementById("user_para").innerHTML = "Email : " + email_id + "<br/> Verified : " + email_Verified;
     }
        
   } else {
     // No user is signed in.
-    
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
-
+    document.getElementById("nettsidelink-btn").style.display = "none";
   }
 
+}); 
+
+function delete_account(){
+
+  var user = firebase.auth().currentUser;
+
+user.delete().then(function() {
+  // User deleted.
+}).catch(function(error) {
+  // An error happened.
 });
+}
 
 function login(){
 
@@ -77,13 +87,13 @@ function reset_user_password(){
 const email = firebase.auth().currentUser.email;
 firebase.auth().sendPasswordResetEmail(email)
   .then(function() {
-    document.getElementById("reset").innerHTML =("Reset link has been sent to your email address");
+    document.getElementById("reset").innerHTML =("Reset link has been sent.");
   });
 }
 
 function logout(){
   firebase.auth().signOut();
-
+ 
 }
 
 function send_verification(){
