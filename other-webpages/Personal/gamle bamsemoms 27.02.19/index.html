@@ -1,0 +1,204 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BAMSEMOMS | HOME </title>
+  <link rel="icon" href="images/logo.png">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+  <!-- build:css css/styles.css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- endbuild -->
+  <script type = "text/javascript">
+       function Redirect() {
+          window.location = "/";
+       }
+
+       firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+    window.location.href = "/";
+  }
+});
+ </script>
+
+</head>
+<body>
+
+    <nav>
+      <div class="container clearfix">
+     <h1><span style=" color:rgb(46, 127, 232)"  class="bold">BAMSE</span><span class="light" style=" color:rgb(46, 127, 232);" >MOMS</span></h1>
+        <span id="status"></span>
+        <h2 id="menu">Menu</h2>
+        <div class="menu-dropdown hidden">
+          <ul>
+            <li><a href="#">Hjem</a></li>
+            <li><a href="price/">Priser</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li style=" color: white; "> Faktura På E-Post </li>  
+          </ul>
+        </div>
+        <ul id="main-nav">
+
+            <li><a href="#">Hjem</a></li>
+            <li><a href="price/">Priser</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li style=" color: white; "> Faktura På E-Post </li>
+            <li><button style=" padding-left: 30px; padding-right: 30px; " onclick="Redirect()">Logout</button></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <img src="images/logo.png" alt="cirewho brand logo">
+        <h1 id="title">BamseMoms Web Utvikling. </h1>
+       <!--<a class="button" href="https://www.twitch.tv/BamseMoms" target="_blank">Se Twitch Stream</a>-->
+      </div>
+    </header>
+
+    
+      <section id="about-schedule">
+        <div class="container clearfix">
+          </style>
+           <!-- <div class="alert">
+                <strong> WARNING: </strong> Nettsiden er under utvikling / rare ting kan skje, kontakt hvis du opplever dette.
+              </div> -->
+          <div class="about-content">
+            <h2> Om Meg </h2>
+            <p> Velkommen til min nettside, Mitt navn er Martin, 16 År, Studere: Elektro 1VGS, og driver med <span style="color: rgb(46, 127, 232)" class="bold"> WEB UTVIKLING </span> </p>
+            <h2> Nedtelling Til 2020</h2>
+            <h4 id="tid"></h4>
+            <h4 id="giveaway"></h4>
+            <br>
+            <br>
+
+            <p>HTML</p>
+            <div class="containerskill">
+            <div class="skills html">90%</div>
+           </div>
+
+           <p>CSS</p>
+           <div class="containerskill">
+           <div class="skills css">80%</div>
+           </div>
+
+           <p>JavaScript</p>
+           <div class="containerskill">
+           <div class="skills js">3,1%</div>
+           </div>
+
+           <p>PHP</p>
+           <div class="containerskill">
+           <div class="skills php">0,2%</div>
+           </div>
+           
+        </div>
+         
+          <div class="about-content">
+            <h2> Samarbeid </h2>
+            <p> Hvis du vil ha samarbeid med meg heller sponsord Bruk <span class="bold"><a style=" color:rgb(46, 127, 232)" href="#contact">Kontakt</a></span> For og snakke om dette.</p>
+            <br>
+            <h3> Samarbeid Med </h3>
+            <h4><span class="bold"> BamseMoms Web Utvikling </span></h4>
+            <br>
+            <h2> Twitch Stream </h2>
+          <a href="#" class="twitch-widget" id="twitch-widget" target="_blank"></a><br><br>
+          <iframe src="https://player.twitch.tv/?channel=BamseMoms" style="margin:-14%;" frameborder="0" allowfullscreen="true" scrolling="no" height="300" width="450"></iframe></a>
+          <!--<h2 style="margin-bottom: 20%; margin-top:20%; "> Siste Video </h2>
+          <iframe  width="450" height="300" style="margin:-14%;" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=YOUR_CHANNEL_NAME_HERE" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+
+        <div class="about-content">
+          <h2> Prosjekter </h2>
+          <p> jeg har laget mye nettsider og to discord roboter som funker men ikker er på en server for øyeblikket. Og har laget mye nettsider med HTML, CSS, JS.</p>
+          <h2> Twitter </h2>
+          <iframe style=" margin-bottom: -25%; border: none; " src="https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue"></iframe>
+          <a class="twitter-timeline" data-width="400" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/BamseMomss?ref_src=twsrc%5Etfw"></a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    </section>
+  
+    <section id="contact">
+        <div class="container clearfix">
+          <h1>Kontakt Meg</h1>
+          <div class="contact-intro">
+            <h3> Send meg en epost gjennom dette skjemaet. Send meg med eventuelle forslag til samarbeid. </h3>
+          </div>
+          
+          <form action="https://formspree.io/pondern12@gmail.com" method="POST">
+            <input type="hidden"  value="BamseMoms Web Utvikling" />
+            <input type="hidden" name="_next" value="send/" />
+            <input type="hidden"  value="no" />
+            <input type="text"  style="display:none" />
+            <div class="input-container">
+              <div class="form-group">
+                <label for="name">Navn:</label>
+                <span id="fnError" class="error-msg"></span>
+                <input type="text" id="first-name" name="Navn" placeholder="Navn..." required>
+              </div>
+              <div class="form-group">
+                <label for="name">EtterNavn:</label>
+                <span id="lnError" class="error-msg"></span>
+                <input type="text" id="last-name" name="EtterNavn" placeholder="EtterNavn...">
+              </div>
+              <div class="form-group">
+                <label for="mail">E-Post:</label> 
+                <span id="emError" class="error-msg"></span>  
+                <input type="email" id="mail" name="E-Post" placeholder="E-Post..." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Velg</label>
+                    <select style="border-color: #3a3a3a; background-color: #3a3a3a; color: rgb(46, 127, 232); "name="VELG">
+                      <optgroup label="Velg">
+                        <option value="Annet">Annet</option>
+                        <option value="Sponsord">Sponsord</option>
+                        <option value="Support">Support</option>
+                      </optgroup>
+                      <optgroup label="Webside Valg"></optgroup>
+                        <option value="70,- Basic">70,- Basic</option>
+                        <option value="250,- Standard">250,- Standard</option>
+                        <option value="760,- Premium">760,- Premium</option>
+                      </optgroup>
+                      </select>
+            </div>
+            <br>
+            <div class="text-group">
+              <label for="message">Melding:</label>
+              <textarea id="message" name="melding" placeholder="Melding..." required></textarea>
+            </div>
+            <button  type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <footer>
+      <div id="main-footer">
+        <ul>
+          <li><a href="https://twitter.com/BamseMoms02"><img src="images/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="images/snapchat.png" alt="snapchat"></a></li>
+          <li><a href="https://twitch.tv/BamseMoms"><img src="images/twitch.jpg" alt="Twitch"></a></li>
+        </ul>
+        <p>Copyright © 2019 BamseMoms - All rights reserved</p>
+        <p>Design & Development by BamseMoms</p>
+        <p> Versjon 1.11.9 </p>
+      </div>
+    </footer>
+
+  <!-- Js scripts here -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/formvalidation.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/timer-counter.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <!-- endbuild -->
+</body>
+</html>
