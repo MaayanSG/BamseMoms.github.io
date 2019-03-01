@@ -75,8 +75,8 @@ FriendlyChat.prototype.loadMessages = function() {
     var val = data.val();
     this.displayMessage(data.key, val.name, val.text, val.photoUrl, val.imageUrl);
   }.bind(this);
-  this.messagesRef.limitToLast(2).on('child_added', setMessage);
-  this.messagesRef.limitToLast(2).on('child_changed', setMessage);
+  this.messagesRef.limitToLast(6).on('child_added', setMessage);
+  this.messagesRef.limitToLast(6).on('child_changed', setMessage);
 };
 
 // Saves a new message on the Firebase DB.
