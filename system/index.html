@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>BamseMoms | login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="icon" href="web/images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>BamseMoms Register/Login</h3>
+    <h4>E-Post</h4>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <h4>Passord</h4>
+    <input style=" margin-right: -900px; " type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br>
+    <button onclick="create_account()"> Create new account </button>
+    <br>
+  </div>
+  
+    <div id="user_div" class="loggedin-div">
+    <h2 style=" text-align: center; ">Velkommen</h2>
+    <p id="user_para">user info found ERROR</p><p style=" color: green; ">Du er Logget inn</p>
+    <br><br>
+    <form id="nettsidelink-btn" method="get" action="/web/">
+      <button type="submit">BamseMoms.GitHub.Io</button>
+    </form>
+    <br>
+    <form id="nettsidelink-btn" method="get" action="/chat/">
+      <button type="submit">Chatting system</button>
+    </form>
+    <br>
+    <button onclick="logout()">Logout</button>
+    <br>
+    <button id="verify_btn" onclick="send_verification()">Send Verification</button>
+    <br>
+    <button id="verify_btn" onclick="delete_account()">Delete Account</button>
+    <br>
+    <button onclick="reset_user_password()">Reset Password</button>
+    <br>
+    <div id="reset"style="color:red;"></div>
+    <br>
+    <iframe style="margin-bottom: -25%; border: none; " src="https://img.shields.io/discord/338404521682272267.svg?style=for-the-badge&label=DISCORD&message=ONLINE&color=blue"></iframe>
+  </div>
+
+  <div class="sidenav">
+    <h1> Annonsering</h1>
+    <h4> Hvis du ikke vil logge in for å se websiden: <a style=" color:rgb(46, 127, 232)" href="/">Klikk Her</a> </h4>
+    <hr style=" border-top: 3px solid #000;; width: 60%; ">
+    <h1> Nytt!</h1>
+    <h4> <span style=" margin: 0%; font-size: 20px; color: green; ">*</span> Lagt til register/login system </h4>
+    <h4> <span style=" margin: 0%; font-size: 20px; color: green; ">*</span> Alle kan lage konto og slette. </h4>
+    <h4> <span style=" margin: 0%; font-size: 20px; color: red; ">*</span> Fjerna mye some ikke trengs av CSS, HTML </h4>
+    <hr style=" border-top: 2px solid #000;; width: 60%; ">
+    <h1> Hjelp? </h1>
+    <h4> kontakt oss hvis du har noe problemer: <a style=" color:rgb(46, 127, 232)" href="/#contact">Klikk Her</a> </h4>
+    <h4> <span style=" margin: 0%; color: red; ">PS. </span>lager du konto så får du mer tilgang. </h4>
+    <hr style=" border-top: 2px solid #000;; width: 60%; ">
+    <h1> Twitch </h1>
+    <h4><a href="https://www.twitch.tv/bamsemoms?tt_content=text_link&tt_medium=live_embed">Watch live video from BamseMoms on www.twitch.tv</a></h4>
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyATL2MU1BsQ_B40nDgpgunlm6c5GwQOEYg",
+      authDomain: "bamsemoms-github-io.firebaseapp.com",
+      databaseURL: "https://bamsemoms-github-io.firebaseio.com",
+      projectId: "bamsemoms-github-io",
+      storageBucket: "bamsemoms-github-io.appspot.com",
+      messagingSenderId: "352158102660"
+    };
+    firebase.initializeApp(config)
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
