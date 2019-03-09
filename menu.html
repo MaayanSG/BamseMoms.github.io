@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BamseMoms | Home</title>
+    <link rel="icon" href="img/logo.png">
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/main.js"></script>
+    <link href="./style/main.css" rel="stylesheet" />
+
+</head>
+<body>
+        
+    <div class="user_info">
+        <h2 style=" text-align: center; ">Welcome</h2><br>
+        <p id="user_para">user info found ERROR</p><p style=" color: green; ">You are signed in</p>
+    </div>
+    <script type = "text/javascript">
+        function Redirect() {
+           window.location = "/contact";
+        }
+        function Redirect2() {
+           window.location = "/";
+        }
+        function chat() {
+           window.location = "/chat";
+        }
+  </script>
+    <div class="user_button">
+     <br>
+     <button id="home" onclick="Redirect2()">Home</button>
+     <br>
+     <button id="contact" onclick="Redirect()">Contact</button>
+     <br>
+     <button id="chat" onclick="chat()">Chat System</button>
+     <br>
+    <button class="nav-text-style" onclick="mainApp.logout()">Logout</button>
+     <br>
+     <button id="verify_btn" onclick="mainApp.verify()">Verify Account</button>
+     <br>
+     <button onclick="mainApp.repass()">Reset Password</button>
+     <div id="reset"style="color:red;"></div>
+     <br>
+    <button class="nav-text-style" onclick="mainApp.delete()">Delete Account</button>
+</div>
+    
+
+    
+
+</body>
+</html>
