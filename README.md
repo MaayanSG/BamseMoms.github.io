@@ -10,6 +10,3 @@ Copyright © 2019 BamseMoms - All rights reserved
 
 Design & Development by BamseMoms
 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
