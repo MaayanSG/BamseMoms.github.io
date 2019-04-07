@@ -73,7 +73,7 @@
              
         } else {
           // No user is signed in.
-          document.getElementById("user_para").innerHTML =" igje ner logget in"
+          
         }
       
       }); 
