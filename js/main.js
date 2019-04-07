@@ -53,6 +53,7 @@
       
             var email_id = user.email;
             var email_Verified = user.emailVerified;
+            var user = user.displayName;
       
             if(email_Verified){
       
@@ -67,16 +68,15 @@
               document.getElementById("verify_btn").style.display = "block";
             }
       
-            document.getElementById("user_para").innerHTML = "Email : " + email_id + "<br><br> Verified : " + email_Verified;
+            document.getElementById("user_para").innerHTML =  "Email : " + email_id + " <br><br> UserName : "+ user +"  <br><br> Verified : " + email_Verified;
           }
              
         } else {
           // No user is signed in.
-
+          document.getElementById("user_para").innerHTML =" igje ner logget in"
         }
       
       }); 
-
 
     function init(){
         setTimeout(function(){
