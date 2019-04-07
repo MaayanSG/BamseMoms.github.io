@@ -69,6 +69,7 @@
             }
       
             document.getElementById("user_para").innerHTML =  "Email : " + email_id + " <br><br> UserName : "+ user +"  <br><br> Verified : " + email_Verified;
+            document.getElementById("user_para2").innerHTML =  ""+ user;
           }
              
         } else {
