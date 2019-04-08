@@ -1,0 +1,85 @@
+
+            .main {
+                margin:auto;
+            }
+
+            @media (min-width: 992px) {
+                .main {
+                    width: 70%;
+                }
+
+                .patch-nav {
+                    padding: 75px 50px 50px 100px;
+                }
+            }
+
+            .patch-nav {
+                box-shadow: inset -10px 0 5px -5px rgba(0, 0, 0, .05);
+                padding-right: 50px
+            }
+
+            .patch-nav ul > li {
+                padding-left: 20px;
+            }
+
+            .patch-nav ul > li > ul > li {
+                padding: 2px 0px 2px 5px;
+            }
+
+            .patch-nav ul > li > ul {
+                padding-left: 25px;
+            }
+
+            .patch-nav h2 {
+                font-size: 19px;
+                color: #777;
+                font-weight: 700;
+                padding: 5px;
+            }
+
+            .patch-nav a, .patch-nav a:hover, .patch-nav a:focus, .patch-nav a:active {
+                text-decoration: none;
+            }
+
+            .patch-nav a, .patch-nav a:focus, .patch-nav a:active {
+                color: #7777aa;
+            }
+
+            .patch-nav a:hover, .patch-nav a.active {
+                color: #2bdd90d9;
+                padding-left: 20px;
+                transition: padding-left 0.2s;
+            }
+
+            .patch-content {
+                margin-top: 5%;
+            }
+
+            .patch-content h2 {
+                font-weight: 700;
+                font-size: 22px;
+                color: #878787;
+            }
+
+            .patch-content ul {
+                padding: 25px 0px 0px 50px;
+            }
+            .patch-content ul li {
+                list-style: circle;
+                padding: 4px 0px 4px 10px;
+                color: #878787;
+            }
+
+            .thanks {
+                padding: 0px 0px 50px 60px;
+            }
+
+.logout{
+    background-color: red;
+    border-color: red;
+    margin-left: 0%;
+}
+
+a{
+    cursor: pointer;
+}

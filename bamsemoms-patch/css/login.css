@@ -1,0 +1,26 @@
+body{
+    background-color: #dedede;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10%;
+}
+
+.decorated-text{
+    text-align: center;
+    color: #2b90d9;
+}
+
+.firebaseui-container{
+    background-color: #2d2d2d;
+}
+
+.firebaseui-title{
+    color:#2b90d9;
+}
+.firebaseui-label{
+    color:#2b90d9;
+}
+
+input{
+color: #fff !important;
+}
+

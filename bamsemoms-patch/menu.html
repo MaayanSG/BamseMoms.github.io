@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BamseMoms | Home</title>
+    <link rel="icon" href="img/logo.png">
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/menu.css" rel="stylesheet"/>
+
+</head>
+<body>
+        
+    <div id="text_verify" class="user_info">
+        <h2 style=" text-align: center; ">Velkommen <span id="user_para2">userName not found ERROR </span><span> Til Konto Instillinger </h2>
+        <p id="user_para">user info not found ERROR</p>
+    </div>
+    <script type = "text/javascript">
+ function home() {
+               window.location = "/";
+            }
+        firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+    location.replace("/")
+  }
+});
+  </script>
+    <div id="konto" class="user_button">
+        <button id="home"onclick="home()">home</button>
+     <br>
+    <button id="logout" onclick="mainApp.logout()">Logout</button>
+     <br>
+     <button id="verify_btn" onclick="mainApp.verify()">Verify Account</button>
+     <br>
+     <button onclick="mainApp.repass()">Reset Password</button>
+     <div id="reset"style="color:red;"></div>
+     <br>
+    <button onclick="mainApp.delete()">Delete Account</button>
+</div>
+    
+
+    
+
+</body>
+</html>
