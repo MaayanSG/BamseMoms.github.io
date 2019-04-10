@@ -4,12 +4,19 @@
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
+          document.getElementById("login").style.display = "none";
+          document.getElementById("notloggedin_text").style.display = "none";
           currentUser = user;
         }else{
-            location.replace("login.html");
+            //location.replace("login.html");
+            document.getElementById("notloggedin_text").style.display = "block";
+            document.getElementById("text_verify").style.display = "none";
+            document.getElementById("verify_btn").style.display = "none";
+            document.getElementById("logout").style.display = "none";
+            document.getElementById("konto").style.display = "none";
+            document.getElementById("login").style.display = "block";
         }
       });
-
     function fnLogout(){
         firebase.auth().signOut();
     }
@@ -58,21 +65,21 @@
       
             if(email_Verified){
       
-              document.getElementById("logout").style.display = "block";
               document.getElementById("verify_btn").style.display = "none";
               document.getElementById("konto").style.display = "block";
+              document.getElementById("logout").style.display = "block";
               document.getElementById("text_verify").style.display = "block";
             } else {
 
-              document.getElementById("logout").style.display = "block";
               document.getElementById("verify_btn").style.display = "block";
+              document.getElementById("logout").style.display = "blcok";
               document.getElementById("konto").style.display = "none";
               document.getElementById("text_verify").style.display = "none";
             }
-            document.getElementById("user_para2").innerHTML =  " " + user;
-            document.getElementById("user_para").innerHTML =  "Email : " + email_id + " <br><br> UserName : "+ user +"  <br><br> Verified : " + email_Verified;
+            document.getElementById("user_para2").innerHTML =  " " + email_id;
+            document.getElementById("user_para").innerHTML =  "<br><br><br>Email : " + email_id + " <br><br>Verified : " + email_Verified;
           }
-          
+
         } else {
           // No user is signed in.
           

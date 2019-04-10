@@ -2,7 +2,7 @@
     appFB.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
-          location.replace("index.html");
+          //location.replace("index.html");
         }else{
             init();
             

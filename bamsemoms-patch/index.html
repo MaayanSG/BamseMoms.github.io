@@ -10,8 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Telex|Open+Sans:700' rel='stylesheet'>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
-    <script src="js/firebase.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/main.js"></script>
 	    </head>
 
 <body>
@@ -34,20 +34,25 @@
                             <a id="konto" class="nav-link" href="menu.html">Konto</a>
                         </li>
                             </ul>
-                            <p style=" margin-top: 1%; margin-right: 5%; color: white;">Welcome, <b><span id="user_para2">userName not found!</p></b>
+                            <p style=" margin-top: 1%; margin-right: 5%; color: white;">Welcome, <b><span id="user_para2">Plis Login! ❤️</p></b>
                         <ul class="nav navbar-nav navbar-right">
 
+                            
                 <li class="nav-item" id="nav-item" >
                         <div id="verify"style="margin-top: 5%; color:green;"></div></li>
                         <a class="nav-link" id="verify_btn" onclick="mainApp.verify()">Verify</a></li>
 
                 <li class="nav-item" id="nav-item" >
-                        <a class="nav-link" id="logout" onclick="mainApp.logout()" href="#">Logout</a></li>
+                        <a id="login" class="nav-link" href="/login/">Login / Register</a>
+                        <a class="nav-link" id="logout" onclick="mainApp.logout()" href="/#">Logout</a></li>
             </ul>
             
         </div>
     </div>
 </nav>
+
+<h1 style=" text-decoration: none; text-align: center; margin-top: 10%;" id="notloggedin_text" ><b> LOGIN TO SEE CONTENT </b><br><br><a id="notloggedin_text" id="login" class="nav-link" href="/login/">Login / Register</a></h1>
+
 
 <div id="text_verify" class="main">
     <div class="container-fluid">
@@ -61,7 +66,6 @@
                         </ul>
                 </ul>      
            </div>
-
             <div class="col-md-6 col-md-20 patch-content">
                 <h2>Patch Notes - 8 Apr 2019 - v1.2.0</h2>
                 <ul>

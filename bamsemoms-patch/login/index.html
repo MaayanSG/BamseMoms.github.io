@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>BamseMoms | login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>BamseMoms Patch Notes Register/Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br>
+    <button onclick="create_account()"> Create new account </button>
+    <div id="account_errors"style="margin-top: 5%; color:red;"></div>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBZLLoxX2akf3wOkXaQ6NbbGgYOPDWSYqU",
+        authDomain: "bamsemoms-web1.firebaseapp.com",
+        databaseURL: "https://bamsemoms-web1.firebaseio.com",
+        projectId: "bamsemoms-web1",
+        storageBucket: "bamsemoms-web1.appspot.com",
+        messagingSenderId: "779805817224"
+    };
+    firebase.initializeApp(config)
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
