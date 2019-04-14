@@ -6,7 +6,7 @@
           // User is signed in.
           currentUser = user;
         }else{
-            location.replace("login.html");
+            location.replace("index.html");
         }
       });
 
