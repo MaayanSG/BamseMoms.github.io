@@ -77,19 +77,12 @@ h2,h3 {
 }
 
 h1,h2,h3 {
-  color: #2b90d9;
+  color: rgb(46, 127, 232);
 }
 
 a {
   text-decoration: none;
   color: #fff;
-}
-
-a:hover{
-  color: #2b90d9;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
 }
 
 ul {
@@ -106,7 +99,7 @@ input:focus,select:focus,textarea:focus,button:focus {
 }
 
 a.button {
-  border: 1px solid #2b90d9;
+  border: 1px solid rgb(46, 127, 232);
   border-radius: 5px;
   padding: 1em;
   display: inline-block;
@@ -117,7 +110,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #2b90d9;
+  background-color: rgb(46, 127, 232);
   color: #fff;
 }
 
@@ -133,14 +126,14 @@ a.button:hover {
 /* ---- Navigation ---- */
 
 nav {
-  background-color: #282c37;
+  background-color: #333;
   padding: 1em;
   text-align: center;
 }
 
 nav h1 {
   margin: 0;
-  color: #2b90d9;
+  color: rgb(46, 127, 232);
   letter-spacing: 2px;
 }
 
@@ -149,7 +142,7 @@ nav h2 {
   padding-bottom: 0.25em;
   display: inline-block;
   color: #fff;
-  border-bottom: 1px solid #2b90d9;
+  border-bottom: 1px solid rgb(46, 127, 232);
   cursor: pointer;
 }
 
@@ -173,7 +166,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 1px solid #2b90d9;  
+  border-bottom: 1px solid rgb(46, 127, 232);  
   padding-bottom: 10px;
 }
 
@@ -184,7 +177,7 @@ nav a:hover {
 .menu-dropdown > ul > li {
   margin: 0;
   display: block;
-  border-bottom: 1px solid #2b90d9;
+  border-bottom: 1px solid rgb(46, 127, 232);
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -199,7 +192,7 @@ nav a:hover {
 
 .menu-dropdown a:hover {
   border: none;
-  color: #2b90d9;
+  color: #2EC3E8;
 }
 
 .bold {
@@ -213,7 +206,7 @@ nav a:hover {
 /* ---- Header ---- */
 
 header {
-  background: linear-gradient( rgb(43, 144, 217), rgba(40, 44, 55, 0.7)), url("../images/dd.png"); 
+  background: linear-gradient(rgb(46, 127, 232), rgba(17, 34, 51, 0.7)), url("../images/dd.png"); 
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -239,7 +232,7 @@ header h1 {
 
 header button {
   background-color: none;
-  border: 1px solid #2b90d9;
+  border: 1px solid rgb(46, 127, 232);
 }
 
 /* ---- Stream Details ---- */
@@ -268,7 +261,7 @@ header button {
 #about-schedule {
   padding-top: 6em;
   padding-bottom: 7em;
-  background-color: #282c37;
+  background-color: #333;
 }
 
 #about-schedule h2 {
@@ -283,9 +276,9 @@ header button {
 /* ------- Contact ------- */
 
 #contact {
-  background-color: #d9e1e8;
+  background-color: #34495e;
   padding: 3em 0;
-  color: #282c37; 
+  color: #fff; 
 }
 
 #contact h1 {
@@ -296,7 +289,7 @@ header button {
 }
 
 #contact h3,#contact h1 {
-  color: #282c37;
+  color: #fff;
 }
 
 #contact h3 {
@@ -316,7 +309,7 @@ header button {
 button {
   display: block;
   box-shadow: none;
-  background-color: #2b90d9;
+  background-color: rgb(46, 127, 232);
   color: #fff;
 }
 
@@ -431,7 +424,7 @@ textarea {
 
 footer {
   text-align: center;
-  background-color: #282c37;
+  background-color: #333;
   padding-top: 2em;
   padding-bottom: 2em;
   color: #777;
@@ -479,7 +472,6 @@ footer li {
 /* ------- Twitch API Styles------- */
 
 .twitch-widget {
-  text-align: center;
   border-radius: 5px;
   color: #fff;
   display: block;
@@ -489,7 +481,7 @@ footer li {
 }
 
 .twitch-widget:hover{
-  color: #2b90d9;
+  color: rgb(46, 127, 232);
 }
 
 .online,
@@ -533,7 +525,7 @@ footer li {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #282c37;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -548,7 +540,7 @@ footer li {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #282c37;}
+.dropdown:hover .dropbtn {background-color: #333333;}
 
 /* ------- Scroll------- */
 #scroll {
@@ -598,7 +590,7 @@ footer li {
 
   nav {
     position: fixed;
-    box-shadow: 0 1px 4px #282c37;
+    box-shadow: 0 1px 4px #000;
     z-index: 999;
     top: 0;
     width: 100%;

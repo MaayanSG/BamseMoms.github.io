@@ -57,7 +57,7 @@ $(document).ready(function() {
   (function() {
     var user_name, api_key, twitch_widget;
   
-    user_name = "sayeedblack";
+    user_name = "BamseMoms";
     api_key = "5j0r5b7qb7kro03fvka3o8kbq262wwm";
     twitch_widget = $("#twitch-widget");
   
@@ -74,12 +74,12 @@ $(document).ready(function() {
           twitch_widget.html(
             "<span class='online'></span> Online! Playing: "+
               data.stream.game +
-              " <span class='viewers'> Viewers: " + 
+              "<span class='viewers'> Viewers: " + 
               data.stream.viewers +
               "</span>"
           );
         } else {
-          twitch_widget.html("<span class='Stream is offline'></span> Stream is Offline");
+          twitch_widget.html("<span class='BamseMoms is offline'></span> BamseMoms is Offline");
         }
       }
     );
