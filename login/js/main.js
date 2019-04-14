@@ -68,8 +68,8 @@
               document.getElementById("verify_btn").style.display = "block";
             }
       
-            document.getElementById("user_para").innerHTML =  "Email : " + email_id + " <br><br> UserName : "+ user +"  <br><br> Verified : " + email_Verified;
-            document.getElementById("user_para2").innerHTML =  ""+ user;
+            document.getElementById("user_para").innerHTML =  "Email : " + email_id + " <br><br> Verified : " + email_Verified;
+            document.getElementById("user_para2").innerHTML =  ""+ email_id;
           }
              
         } else {
